@@ -17,5 +17,5 @@ This plant has an input and output, allowing it to transmit different signals ba
 It converts the signal into energy that can be used to activate triggers and complete tasks. The Receiver is the endpoint of the signal and the player's goal is to activate all the Receivers in a given area. 
 ## Modifier Plant: 
 This plant adjusts the frequency of the signal to activate different receivers/paths. This is visualised by changing the colour of the signal.
-##Destroyer Plant: 
+## Destroyer Plant: 
 This plant has an input and output and will destroy plants/garbage. The output signal is based on the signal that it is receiving. 
