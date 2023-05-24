@@ -235,6 +235,10 @@ MonoBehaviour:
   m_RequiredFrequency: 1
   m_OpenDoorObject: {fileID: 1929409314}
   m_ClosedDoorObject: {fileID: 698973733}
+  m_Doormanager: {fileID: 0}
+  m_MultipleConnections: 0
+  m_WhichFlower: 0
+  m_ResetDoors: 1
 --- !u!1001 &182867070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1254,6 +1258,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerManagment
       objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5789385059716288539, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1275,7 +1299,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_FlowersOwned.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
       propertyPath: m_FlowersOwned.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_FlowersOwned.Array.data[5]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7960756033935607306, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
