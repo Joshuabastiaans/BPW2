@@ -20,7 +20,6 @@ public class DoorManager : MonoBehaviour
 
         if (Door2)
         {
-            Debug.Log(trueDoors);
             trueDoors++;
         }
 

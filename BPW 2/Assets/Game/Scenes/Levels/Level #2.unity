@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &70788551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7990995335829617266, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
-  m_PrefabInstance: {fileID: 590911435}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &90107273 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7990995335829617278, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
@@ -386,7 +381,7 @@ PrefabInstance:
     - target: {fileID: 7990995335829617276, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
       propertyPath: m_OnReceiveSignal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1332127983}
+      objectReference: {fileID: 0}
     - target: {fileID: 7990995335829617276, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
       propertyPath: m_OnReceiveSignal.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -450,10 +445,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7990995335829617266, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1332127983}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
 --- !u!1 &659102548
 GameObject:
@@ -3285,6 +3277,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerManagment
       objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096945770338541219, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5789385059716288539, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3306,12 +3318,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_FlowersOwned.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
       propertyPath: m_FlowersOwned.Array.data[2]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
       propertyPath: m_FlowersOwned.Array.data[4]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789385060224867400, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
+      propertyPath: m_FlowersOwned.Array.data[5]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7960756033935607306, guid: ddff9d805791cff4fab5d7127c8ba8b8, type: 3}
       propertyPath: m_RootOrder
@@ -3503,24 +3523,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8401310846966221582, guid: 468e84d2601eec349ab278b6c0723497, type: 3}
   m_PrefabInstance: {fileID: 545201723}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1332127983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70788551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 121584678eec94e4c8e121a69ad038fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RequiredFrequency: 0
-  m_OpenDoorObject: {fileID: 2025001214}
-  m_ClosedDoorObject: {fileID: 1088880031}
-  m_Doormanager: {fileID: 0}
-  m_MultipleDoors: 0
-  m_WhichDoor: 0
 --- !u!1 &1512684654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,8 +3956,9 @@ MonoBehaviour:
   m_OpenDoorObject: {fileID: 2025001214}
   m_ClosedDoorObject: {fileID: 1088880031}
   m_Doormanager: {fileID: 545201725}
-  m_MultipleDoors: 1
-  m_WhichDoor: 1
+  m_MultipleConnections: 1
+  m_WhichFlower: 2
+  m_ResetDoors: 1
 --- !u!114 &1851861463 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7990995335829617276, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
@@ -3999,8 +4002,9 @@ MonoBehaviour:
   m_OpenDoorObject: {fileID: 2025001214}
   m_ClosedDoorObject: {fileID: 1088880031}
   m_Doormanager: {fileID: 545201725}
-  m_MultipleDoors: 1
-  m_WhichDoor: 2
+  m_MultipleConnections: 1
+  m_WhichFlower: 1
+  m_ResetDoors: 1
 --- !u!1001 &6346786956953220531
 PrefabInstance:
   m_ObjectHideFlags: 0

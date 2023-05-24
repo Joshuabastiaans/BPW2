@@ -7,8 +7,9 @@ public class DoorOpener : MonoBehaviour
     public GameObject m_ClosedDoorObject;
     public DoorManager m_Doormanager;
 
-    [SerializeField] private bool m_MultipleDoors;
-    [SerializeField] private int m_WhichDoor;
+    [SerializeField] private bool m_MultipleConnections;
+    [SerializeField] private int m_WhichFlower;
+    [SerializeField] private bool m_ResetDoors = true;
 
     public void OpenDoor(Flower flower)
     {
@@ -16,31 +17,39 @@ public class DoorOpener : MonoBehaviour
         if (flower.m_SignalHitBy.m_Frequency == m_RequiredFrequency)
         {
 
-            if (!m_MultipleDoors)
+            if (!m_MultipleConnections)
             {
                 m_OpenDoorObject.SetActive(true);
                 m_ClosedDoorObject.SetActive(false);
 
             }
-
             else
             {
-                switch (m_WhichDoor)
+
+                if (m_WhichFlower == 1)
                 {
-                    case 1:
-                        m_Doormanager.Door1 = true;
-                        break;
-                    case 2:
-                        m_Doormanager.Door2 = true;
-                        break;
-                    case 3:
-                        m_Doormanager.Door3 = true;
-                        break;
-                    default:
-                        Debug.Log("This flower doesn't corralate with the Doormanager");
-                        break;
+                    m_Doormanager.Door1 = true;
+                }
+                if (m_WhichFlower == 2)
+                {
+                    m_Doormanager.Door2 = true;
+                }
+                if (m_WhichFlower == 3)
+                {
+                    m_Doormanager.Door3 = true;
                 }
             }
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (m_ResetDoors)
+        {
+            //reset doors
+            m_Doormanager.Door1 = false;
+            m_Doormanager.Door2 = false;
+            m_Doormanager.Door3 = false;
         }
     }
 }
