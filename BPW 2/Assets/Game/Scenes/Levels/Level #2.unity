@@ -3958,7 +3958,7 @@ MonoBehaviour:
   m_Doormanager: {fileID: 545201725}
   m_MultipleConnections: 1
   m_WhichFlower: 2
-  m_ResetDoors: 1
+  m_ResetDoors: 0
 --- !u!114 &1851861463 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7990995335829617276, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
@@ -4004,7 +4004,7 @@ MonoBehaviour:
   m_Doormanager: {fileID: 545201725}
   m_MultipleConnections: 1
   m_WhichFlower: 1
-  m_ResetDoors: 1
+  m_ResetDoors: 0
 --- !u!1001 &6346786956953220531
 PrefabInstance:
   m_ObjectHideFlags: 0

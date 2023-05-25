@@ -8,7 +8,8 @@ public class IcePlant : Flower
     private bool m_IsMelted = false;
 
     private float m_MeltAmount;
-    private float m_FreezeRate = 20f;
+    [SerializeField] private float m_FreezeRate = 20f;
+    [SerializeField] private float m_MeltRate = 100f;
 
     private SpriteRenderer m_SpriteRenderer;
     private Color m_DefaultColor = Color.white;
@@ -53,7 +54,7 @@ public class IcePlant : Flower
 
     public void Melt()
     {
-        m_MeltAmount+= .2f;
+        m_MeltAmount = m_MeltAmount + m_MeltRate * Time.deltaTime;
 
         if (m_MeltAmount >= 100)
         {
