@@ -3079,7 +3079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7990995335829617276, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
       propertyPath: m_FlowerRemovable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7990995335829617276, guid: cc909cdb685c8d14a9829fa71274e355, type: 3}
       propertyPath: m_OccupyingFlower

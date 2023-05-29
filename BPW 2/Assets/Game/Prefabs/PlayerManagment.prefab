@@ -901,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4667985968094115481, guid: 14ec514ffb6b4344aac6b209b1e3e92b, type: 3}
       propertyPath: m_MatchWidthOrHeight
-      value: 0.85
+      value: 0.535
       objectReference: {fileID: 0}
     - target: {fileID: 4667985968094115483, guid: 14ec514ffb6b4344aac6b209b1e3e92b, type: 3}
       propertyPath: m_Pivot.x
@@ -1085,7 +1085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4667985969663671075, guid: 14ec514ffb6b4344aac6b209b1e3e92b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83
+      value: -67.799515
       objectReference: {fileID: 0}
     - target: {fileID: 4667985969663671076, guid: 14ec514ffb6b4344aac6b209b1e3e92b, type: 3}
       propertyPath: m_ChildAlignment

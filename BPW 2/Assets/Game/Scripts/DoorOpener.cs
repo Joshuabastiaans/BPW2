@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DoorOpener : MonoBehaviour
@@ -10,7 +11,7 @@ public class DoorOpener : MonoBehaviour
     [SerializeField] private bool m_MultipleConnections;
     [SerializeField] private int m_WhichFlower;
     [SerializeField] private bool m_ResetDoors = true;
-
+    private float DoorCheckTimer;
     public void OpenDoor(Flower flower)
     {
 
@@ -42,14 +43,23 @@ public class DoorOpener : MonoBehaviour
         }
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         if (m_ResetDoors)
         {
-            //reset doors
-            m_Doormanager.Door1 = false;
-            m_Doormanager.Door2 = false;
-            m_Doormanager.Door3 = false;
+            DoorCheckTimer += Time.deltaTime * 100;
+            if (DoorCheckTimer > 100)
+            {
+                ResetDoors();
+            }
         }
+    }
+    private void ResetDoors()
+    {
+        //reset doors
+        m_Doormanager.Door1 = false;
+        m_Doormanager.Door2 = false;
+        m_Doormanager.Door3 = false;
+
     }
 }

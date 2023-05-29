@@ -1,18 +1,17 @@
 using UnityEngine;
-using UnityEngine.Events;
 
 public class IcePlant : Flower
 {
-    public UnityEvent m_OnMelt;
-
     private bool m_IsMelted = false;
 
     private float m_MeltAmount;
-    private float m_FreezeRate = 20f;
+    [SerializeField] private float m_FreezeRate = 20f;
+    [SerializeField] private float m_MeltRate = 100f;
 
     private SpriteRenderer m_SpriteRenderer;
     private Color m_DefaultColor = Color.white;
     private Color m_MeltedColor = Color.yellow;
+
 
     public DoorManager m_Doormanager;
     [SerializeField] private int m_WhichFlower;
@@ -29,7 +28,7 @@ public class IcePlant : Flower
     {
         base.Update();
 
-        // Gradually freeze back up
+        //freeze back up
         float freezeAmount = m_FreezeRate * Time.deltaTime;
         m_MeltAmount = Mathf.Max(0f, m_MeltAmount - freezeAmount);
 
@@ -53,15 +52,13 @@ public class IcePlant : Flower
 
     public void Melt()
     {
-        m_MeltAmount+= .2f;
+        m_MeltAmount += m_MeltRate * Time.deltaTime;
 
         if (m_MeltAmount >= 100)
         {
-            //if >100 melted, cooldown timer starts, then slowly freeze back up
             m_IsMelted = true;
-
         }
-        
+
     }
     public void ChangeColor()
     {
@@ -73,6 +70,7 @@ public class IcePlant : Flower
 
     public void ResetDoors()
     {
+
         if (m_MeltAmount < 100)
         {
 
